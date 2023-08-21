@@ -19,5 +19,5 @@ export default async function handler(req,res){
     console.log("lastNumber: " , lastNumber)
     await db.collection('post').insertOne(req.body);
     await db.collection('number').updateOne({"postNumber": "postNumber"},{"$set": {"number": lastNumber.number + 1}})
-    return res.status(200).json('writing test')
+    return res.status(200).json( 'post/' + String(lastNumber.number))
 }

@@ -39,8 +39,10 @@ export default function Write() {
 
         if(r.status == 200){
             alert('작성완료')
+        
             setLoading(false)
-            router.push('/')
+            r.json().then(result => router.push(result))
+            
           } else if(r.status == 400){
             alert('모두 입력해 주세요')
           }
