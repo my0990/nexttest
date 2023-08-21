@@ -1,120 +1,54 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+
+
+
+body, html {
+  margin: 0;
+  font-family: inherit;
+}
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1000px;
   margin: 0 auto;
+  position: relative;
+
+}
+
+
+
+
+
+
+.cardWrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  width: 100vw;
-  background: #CB0303;
-}
-.login-wrapper{
-  width: 1200px;
-  height: 750px;
-  flex-shrink: 0;
-  border-radius: 40px;
-  background: #FFF;
-  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.login-wrapper h1 {
-  color: #000;
-  font-family: Poppins;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0 0 20px 0;
-}
-.login-wrapper p {
-  font-family: Poppins;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0 0 100px 0;
-}
-.login-input input{
-  width: 450px;
-  height: 59px;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 10px;
-  background: rgba(214, 151, 151, 0.20);
-  border: none;
+  padding-top: 80px;
   box-sizing: border-box;
-  margin: 0 0 18px 0;
-  font-size: 20px;
-  text-indent: 20px;
-  font-weight: 600;
-  font-family: Poppins;
-  &:focus {
-    outline: none;
-  }
-  &::placeholder{
-    color: rgba(0, 0, 0, 0.20);
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
+}
+.nextBtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.backBtn {
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
 
-.login-btn button {
-  display: flex;
-  width: 450px;
-  height: 59px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background: #D69797;
-  border: none;
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0 0 18px 0;
+.btn {
   cursor: pointer;
+  transition: all 0.1s;
+  &:hover {
+    scale: 1.2;
+  }
 }
-.kakao-login-btn button {
-  cursor: pointer;
-  display: flex;
-  width: 450px;
-  height: 59px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background: #F1F52C;
-  border: none;
-  color: black;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0 0 18px 0;
-}
-.inputSpan {
-  color: rgba(0, 0, 0, 0.50);
-  font-family: Poppins;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  display: block;
-  text-align: center;
-  margin: 0 0 18px 0;
-}
-
 a {
   text-decoration: none;
 }

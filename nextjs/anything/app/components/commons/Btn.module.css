@@ -1,0 +1,37 @@
+.btn {
+    display: flex;
+    /* width: 150px; */
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-bottom: 3px solid #D69797;
+    color: black;
+    font-family: inherit;
+    /* font-family: Poppins; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.logoutBtn {
+    display: flex;
+    width: 130px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    /* font-family: Poppins; */
+    font-size: 17px;
+    font-style: normal;
+    font-weight:900;
+    line-height: normal;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    background-color: #D69797;
+    border: none;
+}

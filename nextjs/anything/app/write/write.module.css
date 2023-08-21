@@ -1,0 +1,136 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D69797;
+    font-family: inherit;
+}
+
+.wrapper {
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+
+.title {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    outline: none;
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+.title::placeholder {
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.content::placeholder {
+    font-weight: 600;
+    opacity: 50%;
+}
+
+.content {
+    border: none;
+    margin: 50px 0;
+    font-size: 30px;
+    outline: none;
+    height: 100%;
+    resize: none;
+    font-family: inherit;
+}
+
+
+
+.fileWrapper {
+    width: 540px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid  #D69797;
+    border-radius: 15px;
+    color:  #D69797;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: inherit;
+
+}
+
+.btn:hover {
+    transition: all 0.3s;
+    /* background-color:  #c77676; */
+    /* color: white; */
+    scale: 1.2;
+    
+}
+
+.input{
+    padding: 6px 25px;
+    background-color:#D69797;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+
+  }
+
+  .loading {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+  }
+
+  .square{
+    position: absolute;
+    border:0;
+    width:80px;
+    padding:0px;
+
+    /* margin-top: 90px; */
+    /* margin-left: calc(50% - 40px);
+    margin-left: -webkit-calc(50% - 40px);
+    margin-left: -moz-calc(50% - 40px); */
+  }
+  
+  .spin {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border:dashed 5px black;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }
+  
+  @keyframes spin {
+    from   {  transform: rotate(0deg); }
+    to   {  transform: rotate(360deg); }
+  }
