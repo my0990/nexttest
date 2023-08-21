@@ -25,7 +25,7 @@ export default async function Home() {
   return (
       <main className="container">
         <div>
-          숫자는 {number.number}
+          숫자는 112123
         </div>
 
 
