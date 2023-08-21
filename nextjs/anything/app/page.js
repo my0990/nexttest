@@ -21,15 +21,22 @@ export default async function Home() {
   console.log(number.number)    
   
   console.log('end')
-  // redirect('/post/' + (number.number - 1))
-  return (
-      <main className="container">
-        <div>
-          숫자는 112123
-        </div>
+  redirect('/post/' + (number.number - 1))
+  // return (
+  //     <main className="container">
+  //         <Header className="header"/>
+  //         <div className="cardWrapper">
+  //           <Card data={result[0]}/>
+  //         </div>
+  //         <div className='backBtn'>
+  //           <BackArrow width="50" className="btn"/>
+  //         </div>
+  //         <div className='nextBtn'>
+  //           <NextArrow width="50" className="btn"/>
+  //         </div>
+  //         {/* {session  ? <Logoutbtn /> : <Link href="/login">로그인</Link>}
+  //         {session ? session.user.name : <Link href="/signup">회원가입</Link>} */}
+  //     </main>
 
-
-      </main>
-
-  )
+  // )
 }
